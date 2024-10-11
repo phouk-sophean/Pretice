@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+ 
+    font-family: "Poppins", sans-serif;
+
+}
+nav{
+    padding: 16px;
+    background:teal;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+nav ul{
+    display: flex;
+    
+}
+nav ul li a {
+    padding: 20px;
+    color: #fff;
+}
+.header{
+    padding: 18%;
+    background:url(https://cdn.pixabay.com/photo/2024/01/04/16/25/reservoir-8487798_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+   
+
+}
+.contain{
+    width:400px;
+    position: relative;
+     right: 20%;
+     bottom: 150px;
+}
+.header .contain .btn{
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    background:#ffffff8c;
+
+}
+.header .contain .btn p{
+color: black;
+
+}
+
+.header .contain .btn button{
+   width: 40px;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    width: 300px;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #cccccc;
+}
+
+.search-button {
+    border: none;
+    background-color: #39c5a2;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #2da78a;
+}
+
+.search-button:active {
+    background-color: #248c76;
+}
+.card-container{
+   
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    gap: 22px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "card1 card2 card3 card3"
+    "card4 card5 card3 card3";
+    margin-top: 10%;
+ 
+}
+.card1{
+    height: 30vh;
+    display: grid;
+    place-content: center;
+    grid-area: card1;
+    box-shadow: 0px 3px 8px gray;
+}
+.card-container h1{
+    font-size: 16px;
+    color: black;
+    margin: auto;
+
+
+}
+.card-container p{
+    color: black;
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+    
+
+}
+.card2{
+    height: 30vh;
+
+    display: grid;
+    place-content: center;
+    grid-area: card2;
+    box-shadow: 0px 3px 8px gray;
+}
+ 
+.card3{
+     
+ 
+    grid-area: card3;
+     
+}
+.card3 .text3{
+    margin-top: 5%;
+}
+.card3 .text4{
+    margin-top: 5%;
+}
+.card3 button{
+    padding: 10px 24px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background: green;
+    color: #fff;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.card3 h1{
+    font-size: 40px;
+}
+.card4{
+    display: grid;
+    place-content: center;
+    grid-area: card4;
+    box-shadow: 0px 3px 8px gray;
+}
+.card5{
+    height: 30vh;
+
+    display: grid;
+    place-content: center;
+    grid-area: card5;
+    box-shadow: 0px 3px 8px gray;
+}
+
+
+.card-container img{
+    width: 30%;
+    margin: auto;
+}
+.trus{
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+   
+}
+.icon{
+    padding: 10px;
+     
+    text-align: center;
+    
+}
+.icon img{ 
+   width: 13%;
+   height: 20vh;
+   padding: 30px;
+}
+.popular{
+    text-align:center;
+}
+   
+.box-product{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    gap: 22px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box6";
+    margin-top: 5%;
+  
+}
+  
+.box1{
+    height: 30vh;
+    
+    grid-area: box1;
+}
+ 
+.box2{
+    height: 30vh;
+   
+    grid-area: box2;
+}
+ 
+.box3{
+    height: 30vh;
+    
+    grid-area: box3;
+}
+ 
+.box4{
+    height: 30vh;
+     
+    grid-area: box4;
+}
+ 
+.box5{
+    height: 30vh;
+    display: grid;
+    place-content: center;
+    grid-area: box5;
+    
+}
+ 
+.box6{
+    height: 30vh;
+  
+    grid-area: box6;
+}
+.box-product img{
+    width: 40px;
+}
+.box-product h1{
+    font-size: 16px;
+}
+ 
+  
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.testimonial-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.testimonial-text p {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial-text h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.testimonial-text span {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+.testimonial-text .rating {
+    color: #f4c542;
+    margin-top: 10px;
+}
+
+.testimonial-image {
+    flex: 1;
+}
+
+.testimonial-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-section {
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.stat-box p {
+    margin: 5px 0 0 0;
+    color: #888;
+    font-size: 16px;
+}
+.vedeo iframe{
+    margin-left: 25%;
+}
+.vedeo h1{
+   text-align: center;
+   padding: 4%;
+   color:#95a1c4;
+}
+.vedeo .text-vedeo{
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+     
+
+}
+.newsletter-section {
+    text-align: center;
+    background: linear-gradient(to right, #1a73e8, #00c6ff);
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.newsletter-section h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+ 
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 70px;
+    margin-right: 10px;
+    width: 300px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background:none;
+    color: #fff;
+    border: none;
+    border-radius:60px;
+    cursor: pointer;
+    margin-top: 3%;
+    border: solid 2px #ddd;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-logo h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.footer-logo p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-category {
+    margin-right: 20px;
+}
+
+.footer-category h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-category ul li {
+    margin-bottom: 10px;
+}
+
+.footer-category ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-category ul li a:hover {
+    color: #1a73e8;
+}
+
+
+@media only screen and (max-width:425px) and (min-width:260px){
+ 
+    nav ul{
+       display: none;
+    }
+    
+   
+    .contain{
+       margin-top: 40%;
+    }
+    .search-container{
+       width: 80%;
+    }
+    .card-container{
+      
+       width: 90%;
+       height: 100%;
+       margin: auto;
+       gap: 22px;
+       display:grid;
+       grid-template-columns: repeat(2,2fr);
+       grid-template-areas: 
+       "card1 card2 "
+       "card4 card5 "
+        "card3 card3"
+        "card3 card3";
+       margin-top: 10%;
+    
+   }
+   .card1{
+       height: 30vh;
+       display: grid;
+       place-content: center;
+       grid-area: card1;
+       box-shadow: 0px 3px 8px gray;
+   }
+   .card-container h1{
+       font-size: 16px;
+       color: black;
+       margin: auto;
+   
+   
+   }
+   .card-container p{
+       color: black;
+       margin: auto;
+       text-align: center;
+       font-size: 10px;
+       
+   
+   }
+   .card2{
+       height: 30vh;
+   
+       display: grid;
+       place-content: center;
+       grid-area: card2;
+       box-shadow: 0px 3px 8px gray;
+   }
+    
+   .card3{
+       grid-area: card3;
+   }
+   .card3 button{
+     display: flex;
+     justify-content: center;
+   margin-left: 35%;
+   }
+   .trus{
+       width: 100%;
+   }
+   .trus h1{
+       font-size: 15px;
+       text-transform: uppercase;
+   }
+   .text-trus{
+      width: 90%; 
+    
+      margin: auto;
+   }
+   
+   .box-product{
+       width: 90%;
+       height: 100%;
+       margin: auto;
+       gap: 22px;
+       display:grid;
+       grid-template-columns: repeat(1,2fr);
+       grid-template-areas: 
+       "box1"
+       "box2"
+       "box3"
+       "box4"
+       "box5"
+       "box6";
+       margin-top: 5%;
+     
+   }
+     
+   .box1{
+       width: 100%;
+       height: 30vh;
+       box-shadow: 0px 3px 8px gray;
+       grid-area: box1;
+       text-align: center;
+   }
+    
+   .box2{
+       height: 30vh;
+       box-shadow: 0px 3px 8px gray;
+       text-align: center;
+      
+       grid-area: box2;
+   }
+    
+   .box3{
+       height: 30vh;
+       text-align: center;
+       box-shadow: 0px 3px 8px gray;
+       
+       grid-area: box3;
+   }
+    
+   .box4{
+       height: 30vh;
+       text-align: center;
+       box-shadow: 0px 3px 8px gray;
+        position: relative;
+        
+       grid-area: box4;
+   }
+    
+   .box5{
+       height: 30vh;
+       text-align: center;
+       box-shadow: 0px 3px 8px gray;
+       
+       grid-area: box5;
+   }
+   .box5 img{
+        margin: auto;
+   }
+      
+    
+   .box6{
+       height: 30vh;
+       text-align: center;
+       box-shadow: 0px 3px 8px gray;
+      
+       grid-area: box6;
+   } 
+   .testimonial-container{
+       background: #00000007;
+       display: block;
+       text-align: center;
+   }
+   .stats-container h2{
+       font-size: 22px;
+   } 
+   .vedeo iframe{
+       width: 360px;
+       margin: auto;
+       margin-left: 8%;
+   }
+   .text-vedeo h1{
+       font-size: 16px;
+   }
+   .footer-logo{
+       display: none;
+   }
+    
+   }
+   @media only screen and (max-width:1000px) and (min-width:800px){
+       label{
+           display: none;
+       }
+       .contain{
+           margin-top: 5%;
+           padding: 5%;
+       }
+       .card-container{
+      
+           width: 90%;
+           height: 100%;
+           margin: auto;
+           gap: 22px;
+           display:grid;
+           grid-template-columns: repeat(2,2fr);
+           grid-template-areas: 
+           "card1 card2 "
+           "card4 card5 "
+            "card3 card3"
+            "card3 card3";
+           margin-top: 10%;
+        
+       }
+       .card1{
+           height: 30vh;
+           display: grid;
+           place-content: center;
+           grid-area: card1;
+           box-shadow: 0px 3px 8px gray;
+       }
+       .card-container h1{
+           font-size: 16px;
+           color: black;
+           margin: auto;
+       
+       
+       }
+       .card-container p{
+           color: black;
+           margin: auto;
+           text-align: center;
+           font-size: 10px;
+           
+       
+       }
+       .card2{
+           height: 30vh;
+       
+           display: grid;
+           place-content: center;
+           grid-area: card2;
+           box-shadow: 0px 3px 8px gray;
+       }
+        
+       .card3{
+           grid-area: card3;
+           
+       }
+       .card3 h1 {
+           font-size: 2rem;
+           text-align: center;
+       }
+       .card3 p{
+           font-size:20px;
+       }
+       .card3 button{
+         display: flex;
+         justify-content: center;
+          margin-left: 43%;
+       }
+       
+       .icon img{
+   width: 19%;
+   height: auto;
+       }
+       
+   .box-product{
+       width: 90%;
+       height: 100%;
+       margin: auto;
+       gap: 22px;
+       display:grid;
+       grid-template-columns: repeat(2,2fr);
+       grid-template-areas: 
+       "box1 box2"
+       "box3 box4"
+       "box5 box6" ;
+
+    margin-top: 5%;
+  
+}
+.box-product img{
+    margin: auto;
+}
+.box1{
+    width: 100%;
+    height: 30vh;
+    box-shadow: 0px 3px 8px gray;
+    grid-area: box1;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+ 
+.box2{
+    height: 30vh;
+    box-shadow: 0px 3px 8px gray;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    grid-area: box2;
+}
+ 
+.box3{
+    height: 30vh;
+    text-align: center;
+    box-shadow: 0px 3px 8px gray;
+    display: grid;
+    place-content: center;
+    grid-area: box3;
+}
+ 
+.box4{
+    height: 30vh;
+    text-align: center;
+    box-shadow: 0px 3px 8px gray;
+     position: relative;
+     display: grid;
+     place-content: center;
+    grid-area: box4;
+}
+ 
+.box5{
+    height: 30vh;
+     
+    box-shadow: 0px 3px 8px gray;
+    text-align: center;
+    grid-area: box5;
+}
+.box5 img{
+     margin: auto;
+}
+   
+ 
+.box6{
+    height: 30vh;
+    text-align: center;
+    box-shadow: 0px 3px 8px gray;
+    display: grid;
+    place-content: center;
+    grid-area: box6;
+} 
+ .vedeo{
+    margin-right: 47%;
+ }
+ 
+ .text-vedeo h1{
+    font-size: 22px;
+ 
+}
+    
+    
+}
+   
